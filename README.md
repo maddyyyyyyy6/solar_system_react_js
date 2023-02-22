@@ -26,5 +26,5 @@ The React Solar System App includes several features that enhance the user exper
 
 ## Access
 Working on it...
-Maybe in a month.
+Maybe in a month. ⏳
 
