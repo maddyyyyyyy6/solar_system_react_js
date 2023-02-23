@@ -3,39 +3,41 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: orbit 4s linear infinite;
+    z-index: 999999;
+
 }
 
+
 .orbit1 {
-    animation: orbit1 4s linear infinite;
+    animation: orbit1 20s linear infinite;
 }
 
 .orbit2 {
-    animation: orbit2 6s linear infinite;
+    animation: orbit2 30s linear infinite;
 }
 
 .orbit3 {
-    animation: orbit3 8s linear infinite;
+    animation: orbit3 40s linear infinite;
 }
 
 .orbit4 {
-    animation: orbit4 10s linear infinite;
+    animation: orbit4 50s linear infinite;
 }
 
 .orbit5 {
-    animation: orbit5 12s linear infinite;
+    animation: orbit5 60s linear infinite;
 }
 
 .orbit6 {
-    animation: orbit6 14s linear infinite;
+    animation: orbit6 70s linear infinite;
 }
 
 .orbit7 {
-    animation: orbit7 16s linear infinite;
+    animation: orbit7 80s linear infinite;
 }
 
 .orbit8 {
-    animation: orbit8 18s linear infinite;
+    animation: orbit8 90s linear infinite;
 }
 
 
@@ -43,35 +45,28 @@
 
 @keyframes orbit1 {
     from {
-        transform: translate(-50%, -50%) rotate(0deg) translateX(100px) rotate(0deg);
+        transform: translate(-50%, -50%) rotate(0deg) translateX(90px) rotate(0deg);
     }
 
     to {
-        transform: translate(-50%, -50%) rotate(360deg) translateX(100px) rotate(-360deg);
+        transform: translate(-50%, -50%) rotate(360deg) translateX(90px) rotate(-360deg);
     }
 }
+
+/* venus */
 
 @keyframes orbit2 {
     from {
-        transform: translate(-50%, -50%) rotate(0deg) translateX(120px) rotate(0deg);
+        transform: translate(-50%, -50%) rotate(0deg) translateX(130px) rotate(0deg);
     }
 
     to {
-        transform: translate(-50%, -50%) rotate(360deg) translateX(120px) rotate(-360deg);
+        transform: translate(-50%, -50%) rotate(360deg) translateX(130px) rotate(-360deg);
     }
 }
 
+/* earth */
 @keyframes orbit3 {
-    from {
-        transform: translate(-50%, -50%) rotate(0deg) translateX(140px) rotate(0deg);
-    }
-
-    to {
-        transform: translate(-50%, -50%) rotate(360deg) translateX(140px) rotate(-360deg);
-    }
-}
-
-@keyframes orbit4 {
     from {
         transform: translate(-50%, -50%) rotate(0deg) translateX(160px) rotate(0deg);
     }
@@ -81,42 +76,99 @@
     }
 }
 
+/* mars */
+
+@keyframes orbit4 {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(190px) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(190px) rotate(-360deg);
+    }
+}
+
+/* jupiter */
 @keyframes orbit5 {
     from {
-        transform: translate(-50%, -50%) rotate(0deg) translateX(180px) rotate(0deg);
+        transform: translate(-50%, -50%) rotate(0deg) translateX(230px) rotate(0deg);
     }
 
     to {
-        transform: translate(-50%, -50%) rotate(360deg) translateX(180px) rotate(-360deg);
+        transform: translate(-50%, -50%) rotate(360deg) translateX(230px) rotate(-360deg);
     }
 }
 
+/* saturn */
 @keyframes orbit6 {
     from {
-        transform: translate(-50%, -50%) rotate(0deg) translateX(200px) rotate(0deg);
+        transform: translate(-50%, -50%) rotate(0deg) translateX(250px) rotate(0deg);
     }
 
     to {
-        transform: translate(-50%, -50%) rotate(360deg) translateX(200px) rotate(-360deg);
+        transform: translate(-50%, -50%) rotate(360deg) translateX(250px) rotate(-360deg);
     }
 }
 
+/* uranus */
 @keyframes orbit7 {
     from {
-        transform: translate(-50%, -50%) rotate(0deg) translateX(220px) rotate(0deg);
+        transform: translate(-50%, -50%) rotate(0deg) translateX(280px) rotate(0deg);
     }
 
     to {
-        transform: translate(-50%, -50%) rotate(360deg) translateX(220px) rotate(-360deg);
+        transform: translate(-50%, -50%) rotate(360deg) translateX(280px) rotate(-360deg);
     }
 }
 
+/* neptune */
 @keyframes orbit8 {
     from {
-        transform: translate(-50%, -50%) rotate(0deg) translateX(240px) rotate(0deg);
+        transform: translate(-50%, -50%) rotate(0deg) translateX(300px) rotate(0deg);
     }
 
     to {
-        transform: translate(-50%, -50%) rotate(360deg) translateX(240px) rotate(-360deg);
+        transform: translate(-50%, -50%) rotate(360deg) translateX(300px) rotate(-360deg);
     }
+}
+
+
+.Mercury {
+    width: 20px;
+    height: 20px;
+}
+
+.Venus {
+    width: 21px;
+    height: 21px
+}
+
+.Earth {
+    width: 25px;
+    height: 25px
+}
+
+.Mars {
+    width: 23px;
+    height: 23px
+}
+
+.Jupiter {
+    width: 40px;
+    height: 40px
+}
+
+.Saturn {
+    width: 40px;
+    height: 35px
+}
+
+.Uranus {
+    width: 24px;
+    height: 24px
+}
+
+.Neptune {
+    width: 23px;
+    height: 23px
 }
