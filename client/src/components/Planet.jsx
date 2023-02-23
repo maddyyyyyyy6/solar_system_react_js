@@ -12,15 +12,73 @@ import Neptune from "../assets/planets/Neptune.png";
 import Uranus from "../assets/planets/Uranus.png";
 
 const Planet = ({ orbit }) => {
-    const [planet, setPlanet] = useState(planets[orbit - 1]);
+    const [planet, setPlanet] = useState({
+        name: planets[orbit - 1],
+        size: {
+            x: "200px",
+            y: "200px",
+        },
+    });
 
     return (
         <>
-            <img src={planet} className={`planet orbit${orbit}`} />
+            <img
+                src={planet.name}
+                className={`planet orbit${orbit} w-[${planet.width}] h-[${planet.height}]`}
+            />
         </>
     );
 };
 
 export default Planet;
 
-const planets = [Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune];
+const planets = {
+    Mercury: {
+        size: {
+            x: "80px",
+            y: "80px",
+        },
+    },
+    Venus: {
+        size: {
+            x: "80px",
+            y: "80px",
+        },
+    },
+    Earth: {
+        size: {
+            x: "80px",
+            y: "80px",
+        },
+    },
+    Mars: {
+        size: {
+            x: "80px",
+            y: "80px",
+        },
+    },
+    Jupiter: {
+        size: {
+            x: "80px",
+            y: "80px",
+        },
+    },
+    Saturn: {
+        size: {
+            x: "80px",
+            y: "80px",
+        },
+    },
+    Uranus: {
+        size: {
+            x: "80px",
+            y: "80px",
+        },
+    },
+    Neptune: {
+        size: {
+            x: "80px",
+            y: "80px",
+        },
+    },
+};
