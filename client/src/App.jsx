@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Orbit from "./components/Orbit";
 import Sun from "./components/Sun";
+import Text from "./components/Text";
 
 function App() {
     return (
@@ -15,6 +16,8 @@ function App() {
             <Orbit planet="Venus" orbitSize="260px" orbit="2" />
             <Orbit planet="Mercury" orbitSize="180px" orbit="1" />
             <Sun />
+            {/* name and author */}
+            <Text />
         </div>
     );
 }
