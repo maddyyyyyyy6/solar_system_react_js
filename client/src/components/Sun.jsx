@@ -1,8 +1,11 @@
 import React from "react";
+import sun from "../assets/planets/Sun.png";
 
 const Sun = () => {
     return (
-        <div className="w-[150px] h-[150px] bg-yellow-600 rounded-full"></div>
+        <div className="w-[130px] h-[130px] rounded-full">
+            <img src={sun} />
+        </div>
     );
 };
 

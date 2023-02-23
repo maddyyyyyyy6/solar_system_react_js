@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Planet from "./Planet";
 
-const Orbit = ({ index }) => {
+const Orbit = ({ orbitSize, orbit }) => {
     // const [orbitSize, setOrbitSize] = useState("100");
 
     // useEffect(() => {
@@ -10,13 +10,13 @@ const Orbit = ({ index }) => {
     // }, [index]);
     return (
         <div
-            className="border-2 rounded-full border-gray-900 border-dashed absolute"
+            className="border-2 rounded-full border-gray-400 border-dashed absolute"
             style={{
-                width: index,
-                height: index,
+                width: orbitSize,
+                height: orbitSize,
             }}
         >
-            <Planet name="Neptune" />
+            <Planet orbit={orbit} />
         </div>
     );
 };

@@ -2,7 +2,11 @@
 module.exports = {
     content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
     theme: {
-        extend: {},
+        extend: {
+            backgroundImage: {
+                "space-bg": "url('/src/assets/space.jpg')",
+            },
+        },
     },
     plugins: [],
 };

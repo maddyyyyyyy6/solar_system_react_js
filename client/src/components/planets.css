@@ -1,0 +1,124 @@
+.planet {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    animation: orbit 4s linear infinite;
+}
+
+.orbit1 {
+    animation: orbit1 4s linear infinite;
+}
+
+.orbit2 {
+    animation: orbit2 6s linear infinite;
+}
+
+.orbit3 {
+    animation: orbit3 8s linear infinite;
+}
+
+.orbit4 {
+    animation: orbit4 10s linear infinite;
+}
+
+.orbit5 {
+    animation: orbit5 12s linear infinite;
+}
+
+.orbit6 {
+    animation: orbit6 14s linear infinite;
+}
+
+.orbit7 {
+    animation: orbit7 16s linear infinite;
+}
+
+.orbit8 {
+    animation: orbit8 18s linear infinite;
+}
+
+
+
+
+@keyframes orbit1 {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(100px) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(100px) rotate(-360deg);
+    }
+}
+
+@keyframes orbit2 {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(120px) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(120px) rotate(-360deg);
+    }
+}
+
+@keyframes orbit3 {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(140px) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(140px) rotate(-360deg);
+    }
+}
+
+@keyframes orbit4 {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(160px) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(160px) rotate(-360deg);
+    }
+}
+
+@keyframes orbit5 {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(180px) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(180px) rotate(-360deg);
+    }
+}
+
+@keyframes orbit6 {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(200px) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(200px) rotate(-360deg);
+    }
+}
+
+@keyframes orbit7 {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(220px) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(220px) rotate(-360deg);
+    }
+}
+
+@keyframes orbit8 {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg) translateX(240px) rotate(0deg);
+    }
+
+    to {
+        transform: translate(-50%, -50%) rotate(360deg) translateX(240px) rotate(-360deg);
+    }
+}
