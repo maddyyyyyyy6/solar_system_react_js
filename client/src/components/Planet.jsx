@@ -11,15 +11,15 @@ import Saturn from "../assets/planets/Saturn.png";
 import Neptune from "../assets/planets/Neptune.png";
 import Uranus from "../assets/planets/Uranus.png";
 
-const Planet = ({ orbit }) => {
+const Planet = ({ orbit, setPlanetInfo }) => {
     const [planet, setPlanet] = useState(planets[orbitmapping[orbit]]);
 
     return (
         <>
             <img
-                title={planet.name}
                 src={planet.planet}
                 className={`planet orbit${orbit} ${planet.name}`}
+                onClick={() => setPlanetInfo(planet.name)}
             />
         </>
     );
